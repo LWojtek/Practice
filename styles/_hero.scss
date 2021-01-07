@@ -1,0 +1,62 @@
+.hero__wrapper {
+      position: relative;
+
+      width: 100%;
+      top: -300px;
+      left: 0;
+
+}
+
+.hero__text {
+      position: absolute;
+      top: 550px;
+      left: 300px;
+      z-index: 1;
+
+      h2,
+      p {
+            font-family: 'Nanum Brush Script', Arial, Helvetica, sans-serif;
+            color: #fff;
+            text-transform: uppercase;
+      }
+
+      h2 {
+            font-size: 8rem;
+            font-weight: bold;
+            padding: 10px;
+            margin-right: 800px;
+            animation: from-bottom .3s ease-in,
+                  appear 1s ease-in forwards;
+            animation-delay: .5s;
+            opacity: 0;
+      }
+
+      p {
+            font-size: 6rem;
+            animation: from-right .3s ease-in,
+                  appear .8s ease-in forwards;
+
+      }
+}
+
+
+.hero {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+}
+
+
+.logo {
+      padding: 25px 370px 25px 250px;
+      z-index: 999;
+}
+
+.stroke {
+      position: absolute;
+      right: -10px;
+      top: 810px;
+      width: 1000px;
+      z-index: 0;
+      animation: appear 350ms ease-in forwards;
+}
