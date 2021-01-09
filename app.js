@@ -5,25 +5,6 @@ const square = document.querySelectorAll('.square');
 
 
 
-/* ********************************* */
-/* *****  STICKY BOX ON SCROLL *******/
-/* ********************************* */
-
-const tracker = document.querySelector('.track');
-
-document.addEventListener('scroll', () => {
-
-      let value = scrollY - 900;
-
-      if (scrollY > 900) {
-            tracker.style.top = `${value}px`;
-
-      } else if (scrollY > 2400) {
-            value = 1400;
-            tracker.style.top = `${value}px`;
-      }
-})
-
 
 /* ********************************* */
 /* A N I M A T I O N  O N  T E X T S */
@@ -87,8 +68,7 @@ document.addEventListener('scroll', () => {
             logo.setAttribute('src', './assets/dark-bg.png')
             navigationLinks.forEach(el => el.style.color = 'white')
             nav.style.backgroundColor = 'transparent';
-            tracker.style.position = `relative`;
-
+            square.forEach(el => el.style.animation = 'slide-back .5s ease-in forwards');
       }
 })
 

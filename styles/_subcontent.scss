@@ -1,12 +1,9 @@
 .sub__content {
       background-image: url(../assets/net.svg);
-      height: 450px;
       width: 100%;
       position: relative;
       background-color: var(--pri-den-gray-005);
-      margin-top: 131px;
-      margin-bottom: 50px;
-      z-index: 999;
+      margin-bottom: 6rem;
 
       img {
             position: absolute;
@@ -15,18 +12,17 @@
             top: -1px;
       }
 
-      div {
+      >div {
             position: relative;
+            max-width: 65rem;
+            padding-top: 14.3rem;
+            padding-bottom: 12rem;
       }
 
       p {
             font-family: 'Poppins', Arial, Helvetica, sans-serif;
             font-size: 3rem;
-            padding: 100px 600px 30px 600px;
             text-align: left;
+            margin-bottom: 2rem;
       }
-}
-
-.sub__content .article__btn {
-      margin-left: 600px
 }
