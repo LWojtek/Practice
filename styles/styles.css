@@ -115,6 +115,12 @@ body {
   font-family: 'Poppins', Arial, Helvetica, sans-serif;
 }
 
+.container {
+  max-width: 144rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
 .hero__wrapper {
   position: relative;
   width: 100%;
@@ -162,7 +168,10 @@ body {
 }
 
 .logo {
-  padding: 25px 370px 25px 250px;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  padding: 1.8rem 0;
+  height: 8.1rem;
   z-index: 999;
 }
 
@@ -177,21 +186,24 @@ body {
 }
 
 nav {
+  position: fixed;
   width: 100%;
   z-index: 3;
+}
+
+nav > div {
+  padding-left: 6.2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: fixed;
-}
-
-nav ul li {
-  display: inline-block;
-  margin-top: 43px;
-  margin-right: 20px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 nav ul {
@@ -201,14 +213,16 @@ nav ul {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 100%;
-  height: 100%;
   text-align: center;
-  padding-bottom: 30px;
-  padding-left: 190px;
 }
 
-nav ul li a {
+nav li {
+  display: inline-block;
+  margin-top: 16px;
+  margin-right: 20px;
+}
+
+nav a {
   color: white;
   text-decoration: none;
   font-size: 1.4rem;
@@ -219,8 +233,7 @@ nav ul li a {
   text-transform: uppercase;
 }
 
-.active,
-nav ul li a:hover {
+nav a.active, nav a:hover {
   border-bottom: 1px solid #009faa;
 }
 
@@ -1114,28 +1127,6 @@ footer {
 
 /* M E D I A   Q U E R I E S */
 @media screen and (max-width: 1390px) {
-  nav {
-    height: 125px;
-  }
-  nav ul {
-    padding: 15px 20px 20px 750px;
-    height: 100%;
-  }
-  nav ul li {
-    margin: 0;
-    padding: 4rem 0;
-  }
-  nav ul li a {
-    padding: 0;
-    margin-right: 3rem;
-  }
-  .logo {
-    position: absolute;
-    left: 0;
-    top: 0;
-    padding-left: 80px;
-    padding-top: 20px;
-  }
   .hero__wrapper {
     position: relative;
     top: -100px;

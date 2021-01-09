@@ -48,7 +48,9 @@
 
 
 .logo {
-      padding: 25px 370px 25px 250px;
+      box-sizing: content-box;
+      padding: 1.8rem 0;
+      height: 8.1rem;
       z-index: 999;
 }
 
