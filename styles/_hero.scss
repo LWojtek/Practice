@@ -1,10 +1,8 @@
 .hero__wrapper {
       position: relative;
-
       width: 100%;
       top: -300px;
       left: 0;
-
 }
 
 .hero__text {
@@ -35,7 +33,6 @@
             font-size: 6rem;
             animation: from-right .3s ease-in,
                   appear .8s ease-in forwards;
-
       }
 }
 

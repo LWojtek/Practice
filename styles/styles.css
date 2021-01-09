@@ -856,13 +856,14 @@ nav ul li a:hover {
 }
 
 .sub__content {
-  background-image: url(./assets/net.svg);
+  background-image: url(../assets/net.svg);
   height: 450px;
   width: 100%;
   position: relative;
   background-color: var(--pri-den-gray-005);
   margin-top: 131px;
   margin-bottom: 50px;
+  z-index: 999;
 }
 
 .sub__content img {

@@ -3,7 +3,6 @@
       height: 200px;
 }
 
-
 .container {
       display: flex;
 }
@@ -194,6 +193,10 @@
             height: 1px;
             background-image: linear-gradient(to right, rgba(54, 54, 54, 0), rgba(0, 0, 0, 0.75), rgba(54, 54, 54, 0));
             margin-bottom: 5px;
+      }
+
+      :nth-child(n + 7) {
+            margin-bottom: 0;
       }
 }
 
