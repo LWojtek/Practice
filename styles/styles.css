@@ -578,16 +578,11 @@ nav a.active, nav a:hover {
   height: 200px;
 }
 
-.container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .news__title {
-  position: absolute;
-  top: 730px;
-  padding: 30px 500px 30px 400px;
+  padding-left: 15.2rem;
+  padding-top: 8rem;
+  padding-bottom: 10.8rem;
+  width: 50%;
 }
 
 .news__title h1 {
@@ -1147,11 +1142,6 @@ footer {
     right: -5px;
     top: 575px;
     width: initial;
-  }
-  .news__title {
-    position: absolute;
-    top: 650px;
-    left: -200px;
   }
   .articles__wrapper {
     padding-top: 220px;
