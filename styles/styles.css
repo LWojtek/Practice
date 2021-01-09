@@ -124,15 +124,24 @@ body {
 .hero__wrapper {
   position: relative;
   width: 100%;
-  top: -300px;
-  left: 0;
 }
 
-.hero__text {
-  position: absolute;
-  top: 550px;
-  left: 300px;
-  z-index: 1;
+.hero__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 15.2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 61.1rem;
+}
+
+@media screen and (max-width: 720px) {
+  .hero__content {
+    padding-left: 0;
+    text-align: center;
+  }
 }
 
 .hero__text h2,
@@ -146,7 +155,7 @@ body {
   font-size: 8rem;
   font-weight: bold;
   padding: 10px;
-  margin-right: 800px;
+  max-width: 84rem;
   -webkit-animation: from-bottom .3s ease-in, appear 1s ease-in forwards;
           animation: from-bottom .3s ease-in, appear 1s ease-in forwards;
   -webkit-animation-delay: .5s;
@@ -160,7 +169,10 @@ body {
           animation: from-right .3s ease-in, appear .8s ease-in forwards;
 }
 
-.hero {
+.hero__img {
+  position: absolute;
+  left: 0;
+  top: 0;
   height: 100%;
   width: 100%;
   -o-object-fit: cover;
@@ -178,7 +190,7 @@ body {
 .stroke {
   position: absolute;
   right: -10px;
-  top: 810px;
+  top: 47rem;
   width: 1000px;
   z-index: 0;
   -webkit-animation: appear 350ms ease-in forwards;
@@ -1127,21 +1139,6 @@ footer {
 
 /* M E D I A   Q U E R I E S */
 @media screen and (max-width: 1390px) {
-  .hero__wrapper {
-    position: relative;
-    top: -100px;
-  }
-  .hero__text {
-    position: absolute;
-    top: 300px;
-    left: 200px;
-    z-index: 1;
-  }
-  .hero__text h2 {
-    font-size: 7rem;
-    padding: 0;
-    margin-right: 650px;
-  }
   .hero__text p {
     font-size: 6rem;
   }
