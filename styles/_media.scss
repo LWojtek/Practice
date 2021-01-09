@@ -23,25 +23,11 @@
             margin-right: 50px;
       }
 
-      .flex__wrapper {
-            flex-flow: row wrap;
-            flex-basis: 70%;
-      }
-
       .flex__wrapper img {
             height: 150px;
             width: 100%;
-
-
       }
 
-      .articles__track {
-            flex-grow: 1;
-            flex-basis: 30%;
-            border: none;
-            max-height: 1800px;
-            overflow-y: hidden;
-      }
 
       .card::before {
             top: 118px;
@@ -61,18 +47,6 @@
             height: 120px;
       }
 
-
-      .sub__content {
-            margin-top: 100px;
-            margin-bottom: 50px;
-      }
-
-      .sub__content p {
-            padding: 150px 300px 0 300px;
-            ;
-            ;
-      }
-
       .article__btn {
             padding: 5px 139px 11px 20px;
       }
@@ -85,12 +59,6 @@
             position: relative;
             top: 30px;
             left: 80px;
-      }
-
-      .hills {
-            top: 5px;
-            right: -600px;
-
       }
 
 

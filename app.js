@@ -17,18 +17,18 @@ const h1 = document.querySelector('.h1');
 // article track scroll
 
 
-document.addEventListener('scroll', () => {
+// document.addEventListener('scroll', () => {
 
-      let value = scrollY - 900;
+//       let value = scrollY - 900;
 
-      if (scrollY > 900) {
-            tracker.style.top = `${value}px`;
+//       if (scrollY > 900) {
+//             tracker.style.top = `${value}px`;
 
-      } else if (scrollY > 2400) {
-            value = 1400;
-            tracker.style.top = `${value}px`;
-      }
-})
+//       } else if (scrollY > 2400) {
+//             value = 1400;
+//             tracker.style.top = `${value}px`;
+//       }
+// })
 
 // navigation colors change on scroll 
 
@@ -44,7 +44,6 @@ document.addEventListener('scroll', () => {
             logo.setAttribute('src', './assets/dark-bg.png')
             navigationLinks.forEach(el => el.style.color = 'white')
             nav.style.backgroundColor = 'transparent';
-            tracker.style.position = `relative`;
             square.forEach(el => el.style.animation = 'slide-back .5s ease-in forwards');
       }
 })
